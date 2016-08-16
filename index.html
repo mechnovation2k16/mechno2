@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mechnovation 2k16 - The Official Page</title>
+<style>
+body {
+    background-image: url("bg.jpg");
+    background-repeat: vertical;
+	background-attachment: scroll;
+    background-size: 100%;
+    margin: 0px 0px 0px 0px;
+}
+
+@font-face {
+	font-family: 'PT Sans Narrow';
+	src: url("PT Sans Narrow.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Oswald Light';
+	src: url("Oswald-Light.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'PT Sans Narrow Bold';
+	src: url("PT Sans Narrow Bold.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Midnight Moon';
+	src: url("Midnight Moon.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url("Oswald-Regular.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Shoemaker';
+	src: url("Shoemaker.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'PT Sans Bold Italic';
+	src: url("PT Sans Bold Italic.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Titillium LI';
+	src: url("Titillium LI.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Sad Films';
+	src: url("Sad Films.ttf") format('truetype');
+}
+
+div.wrapper {
+    width: auto;
+    margin: 10px 5% 0px 5%;
+    background: rgba(0, 0, 0, 0.7);
+    overflow:hidden;
+    border-radius:20px;
+}
+
+div.menu {
+    background: rgba(0, 0, 0, 0.8);
+    background-size:cover;
+	background-attachment:fixed;
+	border-bottom: solid red;
+}
+
+div.menut {
+    font-family: 'Oswald', 'PT Sans Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: red;
+	float:right;
+	padding: 27px 20px 10px 0px;
+}
+
+img.clogo {
+	max-width:50px;
+	max-height:50px;
+	width:auto;
+	height:auto;
+	padding: 10px 10px 10px 10px;
+
+}   
+
+
+div.menucn {
+	display: inline-block;
+	font-family: 'Sad Films', 'PT Sans Bold Italic', sans-serif;
+	font-size: 30px;
+	text-align: left;
+	padding: 18px 0px 12px 0px;
+
+}
+
+div.menucn a {
+	color: red;
+	text-decoration: none;
+}
+
+img.mlogo {
+	max-width:80px;
+	max-height:80px;
+	width:auto;
+	height:auto;
+	padding: 10px 10px 10px 10px;
+
+}   
+
+.mainlogo {
+	text-align:center;
+}
+
+.mainlogo img {
+	display: inline-block;
+	max-width: 650px;
+	width:auto;
+	height:auto;
+}
+
+.clock {
+	text-align: center;
+	display: inline-block;
+}
+
+div.cs {
+	text-align: center;
+	margin-left: 350px;
+	font-family: 'Shoemaker', 'Midnight Moon', serif;
+	font-size: 60px; 
+	color: red;
+	}
+
+div.notice {
+	margin: 50px 50px 50px 50px;
+	background: rgba(0, 0, 0, 0.7);
+    	background-size:cover;
+	background-attachment:fixed;
+	border-radius:10px;
+}
+
+div.noticet {
+	margin: 10px 10px 10px 10px;
+	font-family:'Oswald Light', 'PT Sans Narrow', serif;
+	font-size:35px;
+	color:red;
+}
+
+div.noticed {
+	margin: 30px 30px 30px 30px;
+	font-family:'Oswald Light', 'PT Sans Narrow', serif;
+	font-size:25px;
+	color:red;
+	word-wrap: break-word;
+}
+
+div.events {
+	margin: 50px 50px 50px 50px;
+	background: rgba(0, 0, 0, 0.7);
+    background-size:cover;
+	background-attachment:fixed;
+	border-radius:10px;
+}
+
+div.eventst {
+	margin: 10px 10px 30px 10px;
+	font-family:'Oswald Light', 'PT Sans Narrow', serif;
+	font-size:35px;
+	color:red;
+}
+
+div.container {
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.7);
+	margin: 0px 30px 5px 30px;
+	overflow:hidden;	
+}
+
+div.header {
+    background-color: rgba(0,0,0,0.7);
+	padding: 5px 0px 5px 20px;
+    cursor: pointer;
+    font-family: 'Oswald Light', 'PT Sans Narrow', serif;
+	font-size: 25px;
+    color: red;
+}
+
+div.content {
+    display: none;
+    padding : 5px;
+    font-family: 'Oswald Light', 'PT Sans Narrow', serif;
+	font-size: 20px;
+    color: red;
+	border-bottom: 2px solid red;
+
+}
+div.contact {
+	margin: 50px 50px 50px 50px;
+	background: rgba(0, 0, 0, 0.7);
+    	background-size:cover;
+	background-attachment:fixed;
+	border-radius:10px;
+}
+
+div.contactt {
+	margin: 10px 10px 10px 10px;
+	font-family: 'Oswald Light', 'PT Sans Narrow', serif;
+	font-size:35px;
+	color:red;
+}
+
+div.contactd1 {
+	margin: 30px 30px 0px 30px;
+	font-family:'Oswald Light', 'PT Sans Narrow', serif;
+	font-size:20px;
+	color:red;
+	word-wrap: break-word;
+}
+
+div.contactd1 a {
+	color: red;
+}
+
+div.contactd1 b {
+	font-size:20px;
+}
+
+div.blink {
+  -moz-animation-duration: 400ms;
+  -moz-animation-name: blink;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  color:red;
+  width:100%;
+  display: inline-block; 
+  text-align:center; 
+  font-size:25px;
+  font-family:'Oswald Light', 'PT Sans Narrow', serif;
+  padding: 0px 0px 10px 0px;
+}
+
+@-moz-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+</style>
+
+<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" >
+
+</head>
+
+<body>
+
+<div class="menu">
+
+        	<div style="float:left">
+        	<a href="http://www.cit.edu.in/" target="_blank">
+			<img class="clogo" src="clogo.png">
+			</a>
+        	</div>
+
+        	<div class="menucn">
+        	<a href="http://www.cit.edu.in/" target="_blank">Coimbatore Institute of Technology</a>
+        	</div>
+
+        	<div style="float:right">
+        	<img class="mlogo" src="logo.png">
+        	</div>
+
+        	<div class="menut">
+        	<a href="#Contact+Us" style="color: red; text-decoration: none;">Contact Us</a>
+        	</div>
+
+			<div class="menut">
+			<a href="https://goo.gl/forms/z3vChyqf6B9DdXHp2" target="_blank" style="color: red; text-decoration: none;">Register</a>
+			</div>
+			
+			<div class="menut">
+			<a href="#Events" style="color: red; text-decoration: none;">Events</a>
+			</div>
+			
+			<div class="menut">
+			<a href="#Notice" style="color: red; text-decoration: none;">Notice</a>
+			</div>
+			
+</div>
+
+<div class="wrapper">
+
+        <br><br><br>
+
+        <div class='mainlogo'>
+        <img src="logo.png">
+        </div>
+
+        <div class='cs'>SEPTEMBER 23,24...</div>
+
+        <br><br><br><br>
+
+        <div class="clock-builder-output" style="left: 50%; margin-left: -305px;"></div>
+
+        <br><br>
+		
+		<div class="blink" style="font-size:45px; font-family:Oswald; padding: 20px 0px 20px 0px;">
+				<a href="https://goo.gl/forms/z3vChyqf6B9DdXHp2" target="_blank" style="color:red;">Register Now!&nbsp</a>
+				</div>
+		
+		<br><br>
+	
+		<div style="border-bottom: solid red; padding: 0px 10px 0px 10px;"></div>
+
+        <div class='notice' id="Notice">
+
+        	<div class='noticet'>
+        	<u> Notice:&nbsp&nbsp&nbsp&nbsp </u>
+        	</div>
+
+        	<div class='noticed'>
+        	<ul><li>A uniform registration fees of <span style="font-family:Times; font-size:30px;">&#8377;</span>300 is mandatory for all participants. The registration fees includes participation for any six events (non-overlapping) and food expenses for both the days. An additional fees of <span style="font-family:Times; font-size:30px;">&#8377;</span>300 is required for participation in more than six events.<br>
+			<li>Registration for all the events commences on August 22, 2016.<br>
+			<li>Refer below to pre-register for Paper Presentation, Project Presentation and Death Race.
+        	</ul><br>
+        	</div>
+	
+        	</div>
+
+        <div style="border-bottom: solid red; padding: 0px 10px 0px 10px;"></div>
+
+		<div class="events" id="Events">
+			
+			<div class='eventst'>
+        	<u>Events:&nbsp&nbsp&nbsp&nbsp</u>
+        	</div>
+
+			<div class="container">
+    			<div class="header"><u>1. Paper Presentation&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+    
+				<div class="content">
+		
+				<div style="width:100%; display:inline-block;">
+        			<div style="float:left; width:20%">
+					<img src="icons/2.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp This is your platform to express yourself, make your views known, explore your ideas and make the best paper presentation ever. Compete with the sharpest minds in the engineering circuit, lock horns with the best all while standing your ground!
+					</div>
+				</div>
+				<div class="blink">
+				<a href="https://goo.gl/forms/xqPiHjz2yBVt0QaI2" target="_blank" style="color:red;">Register Now!</a>
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+    			<div class="header"><u>2. Project Presentation&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+    
+				<div class="content">
+		
+				<div style="width:100%; display:inline-block;">
+        			<div style="float:left; width:20%">
+					<img src="icons/3.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp With the increase in the outflow of engineers each year, it takes a unique innovative mind to stand out as a leader. Do you have what it takes to invent, reinvent or  innovate something worthy of the world's attention? Showcase your ideas and take it a step further!
+					</div>
+				</div>
+				<div class="blink">
+				<a href="https://goo.gl/forms/RWCf0jHJ09tNUlFA3" target="_blank" style="color:red;">Register Now!</a>
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+    			<div class="header"><u>3. Death Race&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+    
+				<div class="content">
+		
+				<div style="width:100%; display:inline-block;">
+        			<div style="float:left; width:20%">
+					<img src="icons/16.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp The flagship event of Mechnovation, the Death Race, is an RC car race, where the riders compete to best one another in terms of speed, acceleration, handling and braking in a unique, unpredictable terrain. Can you make it before others do? The road is rough, the flags are ready, the asphalt is hot, start the engines and ROAR!!
+					</div>
+				</div>
+				<div class="blink">
+				<a href="https://goo.gl/forms/xqPiHjz2yBVt0QaI2" target="_blank" style="color:red;">Register Now!</a>
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>4. General Quiz&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/1.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp How good is your general knowledge? Can you blast your way through questions from politics, sports, economics, science and entertainment? Can you be the top quiz whiz of your generation? Compete with similar minds and take the spotlight!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>5. Cut and Fold&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/4.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp You may have tried paper folding in your schooldays. Now, let's follow down the same road, increasing the difficulty, hazard and the chances of errors. Cut and Fold is the perfect contest of speed, efficiency and safety. Do you possess all the three?
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>6. CAD Modelling&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/5.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp Do you have a visualising mind? Can you see things take shape in your mind without the need for manufacturing? How fast can you replicate your mind in a CAD software? Test your speed, precision and competency in this computer-based event!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>7. Engine Assembly&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/6.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp The IC Engine, the pinnacle of engineering, the monument of the mechanical engineers, was first invented and assembled in 1859. Can you replicate what those legendary engineers did and race against time to assemble the engine, before your opponents do?
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>8. Treasure Hunt&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/7.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp Scattered around the campus are precious objects which will add to your name special points. Be the mechanical detective, decipher the given hints and find those objects before others do. It's time to unlock the Sherlock in you!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>9. Logo Quiz&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/8.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp Are you the industrial freak? How strong is your knowledge of leading ventures? Do you have a special talent for remembering their flagship emblems? It won't be easy. Gear up for the logo quiz! Put forth your memory powers to spot the trickiest of the logos!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>10. Proto-Car&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/9.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp This is an age of innovation and invention. It's not just the design which matters but the speed of invention too. Can you build a prototype of a car which will meet the requirements before your opponents? Gear up for a classical industrial fight where the first wins!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>11. Adzap&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/10.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp As important as invention is to an engineer, without the right marketing and advertisement, any revolution is worthless. Can you turn anything you touch into gold? Are you capable of masterminding an advertisement so good it'll baffle your competition? The world is the audience!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>12. Auto Quiz&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/11.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp Automobiles have been the face of the mechanical branch since time immemorial. A golden field of more than 150 years of age, the automobile industry still blooms with no sign of downfall. Test your acquaintance with the evergreen industry! Sharpen your knowledge and put your mind to the best challenge it can take!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>13. Mr. Mechanic&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/12.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp The jack of all trades is the master of none. But, as an enginner, you are expected to solve all range of problems you face. Can you hurdle past all the twists we throw at you? Excel in design, manufacturing, technical and practical skills and entrepreneurship in this tough fight of wits and muscles equally and take home the crown!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>14. Technical Debate&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/13.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp The skill of communication is in someways dominant over technical knowledge as the latter cannot survive without the former. Sometimes, a good argument can turn the element of truth upside down. Make your speech the finest of the hour and prepare to overturn the tables and prove your point in this vocabulary fight!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>15. Math Wizard&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/14.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp The strongest tool for any engineer, a completely relevant and fundamental element of today's world, Mathematics is this event's arena. Your brain is your weapon. Expel pure magic and be the wizard of mathematics in this nail-biting contest where only the fast come out on top. It's no easy task!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>16. How Stuff Works&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/15.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp Do you have the raw talent of predicting the world before anything happens, using nothing but your knowledge of engineering? Can you explain the universe in the most perfect way? Show your expertise by explaining the imperfections of the physical world with perfection. Be fast or bow out!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+			<div class="container">
+	    		<div class="header"><u>17. HR Interview&nbsp&nbsp&nbsp&nbsp </u>
+    			</div>
+			
+				<div class="content">
+				
+				<div style="width:100%; display:inline-block;">
+    	    		<div style="float:left; width:20%">
+					<img src="icons/17.png" style="max-width:60%; width:auto; height:auto; margin:40px 0px 0px 50px;">
+					</div>
+					<div style="width:70%; margin:40px 20px 40px 20px; float:left;">
+					&nbsp&nbsp&nbsp&nbsp Are you the one person that the industry deserves? Take part in this unique event where the vacancy is one, the contestants many. Can you come under intense scrutiny of communication, vocabulary and intellect and still come out with flying colors? The judges are waiting! Steal their attention! It's time to prove how worthy you are!
+					</div>
+				</div>
+				<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:25px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 10px 0px;">
+				Registration begins on August 22!
+				</div>
+    			</div>
+			</div>
+			
+		<br><br>
+		<div style="color:red; width:100%; display: inline-block; text-align:center; font-size:20px; font-family:'Oswald Light', 'PT Sans Narrow', serif; padding: 0px 0px 20px 0px;">
+				And yet more coming soon...
+				</div>
+		</div>
+		
+		     <div style="border-bottom: solid red; padding: 0px 10px 0px 10px;"></div>
+
+       		<div class='contact' id="Contact+Us">
+
+        	<div class='contactt'>
+        		<u> Contact Us:&nbsp&nbsp&nbsp </u>
+
+        	<div class='contactd1'>
+        		<ul><li><u>Chairman:</u><br>Ashwadh Girish&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8870012431<br><br>     
+        		<li><u>Secretaries:</u><br>Santhosh Kumar S.&nbsp&nbsp&nbsp&nbsp8012465573     	
+        		<br>Kamaleshwaran K.&nbsp&nbsp&nbsp&nbsp&nbsp8870202908<br><br>
+        		<li><u>Treasurers:</u><br>Ravi Prasadh T. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8807409083
+        		<br>Vigneshvar K.S. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9944624025
+				<br><br>Anbarasan M.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8148075772
+        		</ul>
+        	</div>
+		<div style="font-size:25px; text-align:center;">
+		<b>For any queries, mail to <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mechnovation2016@gmail.com&su=Queries" target="_blank" style="color:red;">mechnovation2016@gmail.com</a></b>
+		</div>
+</div>
+        </div>
+
+        <div style="border-bottom: solid red;"></div>
+
+</div>
+
+<br><br><br>
+
+<div style="text-align: right; font-family: 'Oswald',serif; font-size:14px; color:red;background: rgba(0, 0, 0, 0.8); border-top: solid red; background-size:cover; background-attachment:fixed; padding: 0px 14px 0px 0px;"><br>
+        	
+	<a href="https://www.facebook.com/LuciferMorningstar15" target="_blank" style="color:red;">Designed by one of us.</a><br>
+
+</div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="clock_assets/flipclock.js"></script>
+    <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #FF0000; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #FF0000; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #FF0000; }</style>
+    
+	<script type="text/javascript">
+    $(function(){
+    	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+    	var opts = {
+    		clockFace: 'DailyCounter',
+    		countdown: true,
+    		language: 'Custom'
+    	};  
+    	var countdown = 1474601400 - ((new Date().getTime())/1000); // from: 09/23/2016 09:00 am +0530
+    	countdown = Math.max(1, countdown);
+    	$('.clock-builder-output').FlipClock(countdown, opts);
+    });
+    </script>
+	<script>
+		$(".header").click(function () {
+
+   		 $header = $(this);
+   		 $content = $header.next();
+         	 $content.slideToggle();
+
+	});
+	</script>
+
+</body>
+</html>
